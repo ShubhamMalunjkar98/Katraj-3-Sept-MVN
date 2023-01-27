@@ -22,7 +22,7 @@ public void launching() throws IOException {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get(Propertyreader.readProperty("URL"));
+	driver.get(Propertyreader.readProperty("DEV_URL"));
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 }
